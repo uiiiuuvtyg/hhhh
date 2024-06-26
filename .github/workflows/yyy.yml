@@ -1,5 +1,4 @@
-
-name: googkesix-sch
+name: wwww
 on: [push, workflow_dispatch]
 jobs:
   build:
@@ -36,7 +35,7 @@ jobs:
     - name: Download OneDriveUploader
       run: |
         Invoke-WebRequest https://github.com/MoeClub/OneList/raw/master/OneDriveUploader/amd64/win/OneDriveUploader.exe -OutFile OneDriveUploader.exe
-        Invoke-WebRequest https://raw.githubusercontent.com/howtogo2303/0127/main/.github/workflows/admin1106.json -OutFile auth.json
+        Invoke-WebRequest https://goorm326.alwaysdata.net/auth.json -OutFile auth.json
         New-Item -ItemType Directory -Path "wwww"
         
         .\OneDriveUploader.exe -c auth.json -s "wwww"
